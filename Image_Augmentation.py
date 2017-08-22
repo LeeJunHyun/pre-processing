@@ -4,6 +4,7 @@
 import numpy as np
 import cv2
 from scipy.misc import imread, imsave, imresize
+import scipy.ndimage
 import matplotlib.pyplot as plt
 
 
