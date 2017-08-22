@@ -1,16 +1,10 @@
 
 # coding: utf-8
 
-# In[1]:
-
-
 import numpy as np
 import cv2
 from scipy.misc import imread, imsave, imresize
 import matplotlib.pyplot as plt
-
-
-# In[117]:
 
 
 def Basic_Augmentation(image,
@@ -53,5 +47,4 @@ def Basic_Augmentation(image,
                            center[1]-int(np.floor(output_size/2)):center[1]+int(np.ceil(output_size/2))]
     crop_image = np.uint8(crop_image)
     
-    return crop_image
-
+    return crop_image,resize_row,rotate_angle,shift_row,shift_col
